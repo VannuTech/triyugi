@@ -1,0 +1,19 @@
+.Carousel {
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+@media screen and  (max-width: 768px){
+  .Carousel{
+   
+    margin-left: 2%;
+    margin-bottom: 2%;
+    
+        
+  }
+ 
+}

@@ -1,0 +1,42 @@
+.Carousel {
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width:auto;
+    min-height: 3.2em;
+   
+}
+@media screen and  (max-width: 768px){
+  .Carousel{
+  
+    margin-left: 1%;
+    margin-bottom: 2%;
+    min-width:auto;
+    min-height: 100px;
+  }
+ 
+}
+.Carousel Caption{
+margin-top: 50%;
+
+
+}
+.h1 {
+  color: aliceblue;
+ margin-left: 4%;
+margin-right: 4%;
+}
+.contact p{
+ 
+  margin: .15rem 2px;;
+  transition: opacity 0.5s;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 60%;
+  font-display: swap;      
+     
+    }
+    

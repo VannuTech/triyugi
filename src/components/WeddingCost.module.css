@@ -1,0 +1,11 @@
+.listunstyled {list-style-type: square;
+   
+font-weight: 400;
+font-size: 1.2rem};
+
+.featuresgridcontainer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6rem;
+}

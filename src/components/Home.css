@@ -1,0 +1,286 @@
+*{
+  font-family: 'Cabin';
+  font-style: normal;
+  font-size: 1.2rem;
+}
+/* body{
+  background:url('./images/dhuni.mp4'); 
+  position: absolute;
+  width:absolute;
+  height:"80%",
+ 
+} */
+body {
+     
+  background: #4b2741;
+}
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+ 
+}
+
+.wrapper > * {
+  
+  flex: 1 100%;
+ 
+}
+
+
+.main{
+  /* background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.25) 0%, rgba(22, 22, 22, 0.25) 100%), url('./images/triyugi12.jpg'); */
+  background-size: cover;
+  text-align: left;
+  background-repeat: no-repeat;
+  margin: 1%;
+  
+ 
+ 
+}
+
+.aside-1 {
+  background: transparent;
+}
+
+.aside-2 {
+  background: transparent;
+}
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+#maindiv{
+ align-content: center;
+ 
+}
+.main h1{ 
+  padding: 2% 2%;
+  transition:  opacity 0.5s;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 2%;
+  font-display: swap;
+  }
+  .main p{
+  padding: 2% 3%;
+  transition: opacity 0.5s;
+  color: #fff;
+  /* font-size: 1.2rem; */
+  
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 60%;
+  font-display: swap;      
+     
+    }
+    
+.aside-1 h5{ 
+      padding: 2% 2%;
+      transition: opacity 0.5s;
+      color: #fff;
+      /* font-size: 2.3rem; */
+     
+      font-style: normal;
+      font-weight: 800;
+      font-stretch: 60%;
+      font-display: swap;
+      }
+        .aside-2 h5{ 
+          padding: 2% 2%;
+          transition: opacity 0.5s;
+          color: #fff;
+          /* font-size: 1.9rem; */
+          font-family: 'Cabin';
+          font-style: normal;
+          font-weight: 800;
+          font-stretch: 60%;
+          font-display: swap;
+          }
+  
+ .aside-1 p{
+            padding:  2% 2%;
+            transition: opacity 0.5s;
+            color: #fff;
+            /* font-size: 1.2rem; */
+          
+            font-style: normal;
+            font-weight: 200;
+            font-stretch: 60%;
+            font-display: swap;      
+               
+              }
+              .aside-2 p{
+                padding: 1% 1%;
+                transition: opacity 0.5s;
+                color: #fff;
+             /* font-size: 1.2rem; */
+              
+                font-style: normal;
+                font-weight: 300;
+                font-stretch: 60%;
+                font-display: swap;      
+                   
+                  }
+                 
+   .page-wrap {
+    display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
+    display: -ms-flexbox;           /* TWEENER - IE 10 */
+    display: -webkit-flex;          /* NEW - Chrome */
+    display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+     }
+    
+    .main-content {
+    -webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+    -ms-flex-order: 2;              /* TWEENER - IE 10 */
+      -webkit-order: 2;               /* NEW - Chrome */
+      order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      
+      width: 60%;                     /* No flex here, other cols take up remaining space */
+      
+      -moz-box-flex: 1;               /* Without this, Firefox 19- expands to widest paragraph, overrides width */
+      
+      background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.25) 0%, rgba(22, 22, 22, 0.25) 100%), url('./images/triyugi12.jpg');
+      text-align: left;
+      background-repeat: no-repeat;
+    }
+    
+    .main-nav {
+      -webkit-box-ordinal-group: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-ordinal-group: 1;      /* OLD - Firefox 19- */
+      -ms-flex-order: 1;              /* TWEENER - IE 10 */
+      -webkit-order: 1;               /* NEW - Chrome */
+      order: 1;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      
+      -webkit-box-flex: 1;            /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-flex: 1;               /* OLD - Firefox 19- */
+      width: 20%;                     /* For old syntax, otherwise collapses. */
+      -webkit-flex: 1;                /* Chrome */
+      -ms-flex: 1;                    /* IE 10 */
+      flex: 1;                        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      
+      background: #ccc;
+    }
+    
+    .main-sidebar {
+      -webkit-box-ordinal-group: 3;   /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-ordinal-group: 3;      /* OLD - Firefox 19- */
+      -ms-flex-order: 3;              /* TWEENER - IE 10 */
+      -webkit-order: 3;               /* NEW - Chrome */
+      order: 3;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      
+      -webkit-box-flex: 1;            /* OLD - iOS 6-, Safari 3.1-6 */
+      -moz-box-flex: 1;               /* Firefox 19- */
+      width: 20%;                     /* For OLD syntax, otherwise collapses. */
+      -ms-flex: 1;                    /* TWEENER - IE 10 */
+      -webkit-flex: 1;                /* NEW - Chrome */
+      flex: 1;                        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      
+      background: #ccc;
+    }
+    
+    
+    
+  
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    h1, h2 {
+      font: bold 1em Sans-Serif;
+      margin: 0 0 1em 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      margin: 0 0 1rem 0;
+    }
+    .wtsapp{
+      max-height: 1.9em;
+      max-width: 1.9em;
+    }
+  .ab h4, h2, h3 {
+    /* font: bold 1.8em Sans-Serif; */
+      padding-bottom: 10px;
+      line-height: 1.0;
+      
+        }
+   
+ 
+.alert{
+ margin-left: 2%;
+ margin-right: 2%;
+    margin-top: 3%;
+}
+.carousel-wrapper,
+.carousel, .carousel-caption
+.carousel > .slider-wrapper,
+.carousel > .slider-wrapper > .slider {
+  flex: 1 1 auto;
+ 
+  font: bold 3.5rem ;
+  background: rgb(65, 124, 151);
+  margin-top: 2%;
+  font-weight: 500;
+ 
+
+  
+}
+
+
+.image-container {
+  flex: 1 1 auto;
+  min-width:auto;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+  
+}
+.image-container p{
+ 
+  transition: opacity 0.5s;
+
+  /* font-size: 1.2rem; */
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 60%;
+  font-display: swap;      
+     
+    }
+    .image-container h3{
+ 
+      transition: opacity 0.5s;
+      color: #fff;
+      font-size: bold 3.5em;
+      font-weight: 900;
+      font-family: 'Cabin';
+      font-style: normal;
+     
+      font-stretch: 20%;
+      font-display: swap;
+        
+    
+ 
+        }
